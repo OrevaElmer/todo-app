@@ -146,3 +146,42 @@
         }
     }
 }
+@media (max-width: 375px) {
+    .container .appWrapper {
+        max-width: 90%;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 4px 20px #000;
+    }
+    .container .appWrapper .taskInput {
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+        border-radius: 5px;
+    }
+    .container .appWrapper .buttonAdd {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }.container .appWrapper .listItem {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 10px 5px;
+        justify-content: flex-start;
+    }
+    .container .appWrapper .list {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 5px;
+    }
+    .container .appWrapper .buttonComplete, 
+    .container .appWrapper .buttonEdit, 
+    .container .appWrapper .buttonDelete {
+        font-size: 20px;
+    }
+}
