@@ -1,0 +1,148 @@
+// credit:
+// Code&coding youtube channel
+
+@font-face {
+    font-family: "kanit";
+    src: url("./asset/Kanit.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "kanit";
+}
+.container{
+    background: url(./asset/image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+
+
+    .header{
+        text-align: center;
+        background-color: rgba(#fff, 0.5);
+        padding: 10px;
+        width: 100%;
+        backdrop-filter: blur(1px);
+        margin-bottom: 20px;
+
+        h3{
+            background:  rgb(165, 87, 87);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 50%;
+            font-family: sans-serif;
+            color: #ccc;
+        }
+        h1{
+            font-family: "kanit";
+            text-shadow: 1px 2px 1px #000;
+            color: #059205;
+            font-size: 62px;
+            font-weight: bold;
+            
+        }
+    }
+    .appWrapper{
+        background-color: rgba(#12343b,0.8);
+        max-width: 1200px;
+        // min-height: 650px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 3px 6px 40px #000;
+        margin-bottom: 10px;
+
+        .taskInput{
+            outline: none;
+            width: 320px;
+            padding: 15px;
+            margin-right: 10px;
+            font-size: 20px;
+            color: #ccc;
+            background-color: #000;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+        }
+        .buttonAdd{
+            border: none;
+            width: 70px;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            cursor: pointer;
+        }
+        .listItem{
+            display: flex;
+            margin: 20px 0;
+            background-color: rgba(#ccc, 0.5);
+            border-bottom: 2px solid #222;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .list{
+            width: 250px;
+            background:transparent;
+            // background: #12343b;
+            border: none;
+            color: whitesmoke;
+            text-shadow: 0px 2px 2px #000;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+        input:focus,
+        button:focus{
+        outline: none;
+        }
+        button:hover{
+            background:#b4a730;
+        }
+        .buttonComplete,
+        .buttonEdit,
+        .buttonDelete{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #ccc;
+            border-radius: 50%;
+            box-shadow: 0px 2px 2px #000;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            
+            svg{
+                border-radius: 50%;
+            }
+        }
+        .buttonComplete{
+            color: #ff6c6c;
+            background: #ccc;
+            margin-right: 10px;
+        }
+        .buttonEdit{
+            color: #b4a730;
+            margin-right: 10px;
+        }
+        .buttonDelete{
+            color: lightseagreen;
+        }
+        .completed{
+            text-decoration-style: solid;
+            text-decoration-line: line-through;
+            text-decoration-color: #ff6c6c;
+            opacity: 0.6;
+        }
+    }
+}
